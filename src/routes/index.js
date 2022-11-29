@@ -3,7 +3,9 @@ import { OnlyHeader } from '~/components/Layout';
 
 // Pages
 import Home from '~/pages/Home';
+import Product from '~/pages/Product';
 import Product_Index from '~/pages/Product_Index';
+// import Product_Index from '~/pages/Product_Index';
 import Test from '~/pages/Test';
 import Upload from '~/pages/Upload';
 
@@ -30,6 +32,11 @@ const publicRoutes = [
     {
         path: '/products',
         component: Product_Index,
+    },
+    // http://localhost:3000/products
+    {
+        path: '/products/1',
+        component: Product,
     },
 ];
 
